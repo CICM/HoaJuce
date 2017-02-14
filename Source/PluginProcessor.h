@@ -11,6 +11,7 @@
 #ifndef PLUGINPROCESSOR_H_INCLUDED
 #define PLUGINPROCESSOR_H_INCLUDED
 
+#include "../Hoa/Sources/Hoa.hpp"
 #include "../JuceLibraryCode/JuceHeader.h"
 
 
@@ -57,6 +58,17 @@ public:
     void setStateInformation (const void* data, int sizeInBytes) override;
 
 private:
+    size_t m_order     = 3;
+    size_t m_nsources  = 16;
+    size_t m_nhps      = 16;
+    size_t m_nharmos   = 16; // (3+1)^2
+    
+    ScopedPointer<hoa::Encoder<hoa::Hoa3d, float>::Multi>   m_encoder;
+    ScopedPointer<hoa::Optim<hoa::Hoa3d, float>::InPhase>   m_optim;
+    ScopedPointer<hoa::Decoder<hoa::Hoa3d, float>::Regular> m_decoder;
+    float*                                      m_inputs;
+    float*                                      m_harmonics;
+    float*                                      m_outputs;
     //==============================================================================
     JUCE_DECLARE_NON_COPYABLE_WITH_LEAK_DETECTOR (HoaAudioProcessor)
 };

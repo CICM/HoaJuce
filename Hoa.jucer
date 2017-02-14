@@ -21,7 +21,7 @@
     </GROUP>
   </MAINGROUP>
   <EXPORTFORMATS>
-    <XCODE_MAC targetFolder="Builds/MacOSX">
+    <XCODE_MAC targetFolder="Builds/MacOSX" vst3Folder="Vst/">
       <CONFIGURATIONS>
         <CONFIGURATION name="Debug" isDebug="1" optimisation="1" targetName="Hoa"/>
         <CONFIGURATION name="Release" isDebug="0" optimisation="3" targetName="Hoa"/>
