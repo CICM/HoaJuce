@@ -1,22 +1,21 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
-<JUCERPROJECT id="0nRd9LLGO" name="JuceDemoPlugin" projectType="audioplug"
-              version="1.0.0" juceLinkage="amalg_multi" buildVST="1" buildRTAS="0"
-              buildAU="1" pluginName="Juce Demo Plugin" pluginDesc="Juce Demo Plugin"
-              pluginManufacturer="ROLI Ltd." pluginManufacturerCode="ROLI"
-              pluginCode="Jcdm" pluginChannelConfigs="" pluginIsSynth="0" pluginWantsMidiIn="1"
-              pluginProducesMidiOut="1" pluginSilenceInIsSilenceOut="0" pluginTailLength="0"
-              pluginEditorRequiresKeys="1" pluginAUExportPrefix="JuceDemoProjectAU"
-              pluginAUViewClass="JuceDemoProjectAU_V1" pluginRTASCategory=""
-              bundleIdentifier="com.juce.JuceDemoPlugin" jucerVersion="4.3.1"
-              companyName="ROLI Ltd." aaxIdentifier="com.yourcompany.JuceDemoPlugin"
+<JUCERPROJECT id="0nRd9LLGO" name="HoaJuce" projectType="audioplug" version="0.0.1"
+              juceLinkage="amalg_multi" buildVST="1" buildRTAS="0" buildAU="1"
+              pluginName="HoaJuce" pluginDesc="HoaJuce" pluginManufacturer=""
+              pluginManufacturerCode="" pluginCode="HoaJ" pluginChannelConfigs=""
+              pluginIsSynth="0" pluginWantsMidiIn="0" pluginProducesMidiOut="0"
+              pluginSilenceInIsSilenceOut="0" pluginTailLength="0" pluginEditorRequiresKeys="0"
+              pluginAUExportPrefix="HoaJuceProjectAU" pluginAUViewClass="JuceDemoProjectAU_V1"
+              pluginRTASCategory="" bundleIdentifier="com.juce.JuceDemoPlugin"
+              jucerVersion="4.3.1" companyName="CICM" aaxIdentifier="com.yourcompany.HoaJuce"
               buildAAX="0" pluginAAXCategory="AAX_ePlugInCategory_Dynamics"
               includeBinaryInAppConfig="1" buildVST3="1" pluginManufacturerEmail="support@yourcompany.com"
-              companyWebsite="www.juce.com" companyEmail="info@juce.com" pluginIsMidiEffectPlugin="0"
+              companyWebsite="" companyEmail="" pluginIsMidiEffectPlugin="0"
               buildAUv3="0">
   <EXPORTFORMATS>
     <XCODE_MAC targetFolder="Builds/MacOSX" vstFolder="" rtasFolder="~/SDKs/PT_80_SDK"
-               objCExtraSuffix="JuceDemo" aaxFolder="" postbuildCommand="" vst3Folder="/Users/pierre/Documents/Camomile/ThirdParty/Vst">
+               objCExtraSuffix="JuceDemo" aaxFolder="" postbuildCommand="" vst3Folder="Vst">
       <CONFIGURATIONS>
         <CONFIGURATION name="Debug" isDebug="1" optimisation="1" targetName="JuceDemoPlugin"
                        osxSDK="default" osxCompatibility="default" osxArchitecture="64BitUniversal"/>
@@ -84,7 +83,7 @@
       </MODULEPATHS>
     </LINUX_MAKE>
   </EXPORTFORMATS>
-  <MAINGROUP id="dYAMo6Ykd" name="JuceDemoPlugin">
+  <MAINGROUP id="dYAMo6Ykd" name="HoaJuce">
     <FILE id="RCFlkTAef" name="PluginEditor.cpp" compile="1" resource="0"
           file="Source/PluginEditor.cpp"/>
     <FILE id="Iif5nfHL" name="PluginEditor.h" compile="0" resource="0"

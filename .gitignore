@@ -41,5 +41,6 @@
 Vst/*
 !Vst/README.txt
 /Binaries
+/Builds/
 /Builds/MacOSX/build/
 /Builds/LinuxMakefile/build/
