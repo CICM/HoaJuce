@@ -17,32 +17,36 @@
             file="Source/PluginProcessor.h"/>
     </GROUP>
     <GROUP id="{9513651F-F5B3-42C4-4CBB-7EADE28FBA46}" name="Hoa">
-      <FILE id="svawQI" name="Decoder.hpp" compile="0" resource="0" file="Hoa/Sources/Decoder.hpp"/>
-      <FILE id="LjNb8j" name="Defs.hpp" compile="0" resource="0" file="Hoa/Sources/Defs.hpp"/>
-      <FILE id="KiBrv9" name="Encoder.hpp" compile="0" resource="0" file="Hoa/Sources/Encoder.hpp"/>
-      <FILE id="h0lKHY" name="Exchanger.hpp" compile="0" resource="0" file="Hoa/Sources/Exchanger.hpp"/>
-      <FILE id="Dj0ffY" name="Harmonics.hpp" compile="0" resource="0" file="Hoa/Sources/Harmonics.hpp"/>
-      <FILE id="q5AAxk" name="Hoa.hpp" compile="0" resource="0" file="Hoa/Sources/Hoa.hpp"/>
-      <FILE id="BN8FoL" name="Hrir.hpp" compile="0" resource="0" file="Hoa/Sources/Hrir.hpp"/>
-      <FILE id="IOBhbE" name="HrirIrc1002C2D.hpp" compile="0" resource="0"
-            file="Hoa/Sources/HrirIrc1002C2D.hpp"/>
-      <FILE id="G275XU" name="HrirIrc1002C3D.hpp" compile="0" resource="0"
-            file="Hoa/Sources/HrirIrc1002C3D.hpp"/>
-      <FILE id="kkWTXG" name="Math.hpp" compile="0" resource="0" file="Hoa/Sources/Math.hpp"/>
-      <FILE id="zuMIew" name="Meter.hpp" compile="0" resource="0" file="Hoa/Sources/Meter.hpp"/>
-      <FILE id="RBX06K" name="Optim.hpp" compile="0" resource="0" file="Hoa/Sources/Optim.hpp"/>
-      <FILE id="aLimTR" name="Planewaves.hpp" compile="0" resource="0" file="Hoa/Sources/Planewaves.hpp"/>
-      <FILE id="XfEjnJ" name="Processor.hpp" compile="0" resource="0" file="Hoa/Sources/Processor.hpp"/>
-      <FILE id="oZ4UFk" name="Projector.hpp" compile="0" resource="0" file="Hoa/Sources/Projector.hpp"/>
-      <FILE id="TfT8Hi" name="Recomposer.hpp" compile="0" resource="0" file="Hoa/Sources/Recomposer.hpp"/>
-      <FILE id="j8efbN" name="Rotate.hpp" compile="0" resource="0" file="Hoa/Sources/Rotate.hpp"/>
-      <FILE id="hyximJ" name="Scope.hpp" compile="0" resource="0" file="Hoa/Sources/Scope.hpp"/>
-      <FILE id="SpF0HB" name="Signal.hpp" compile="0" resource="0" file="Hoa/Sources/Signal.hpp"/>
-      <FILE id="k2BSIM" name="Source.hpp" compile="0" resource="0" file="Hoa/Sources/Source.hpp"/>
-      <FILE id="A1UoKD" name="Tools.hpp" compile="0" resource="0" file="Hoa/Sources/Tools.hpp"/>
-      <FILE id="p434eE" name="Vector.hpp" compile="0" resource="0" file="Hoa/Sources/Vector.hpp"/>
-      <FILE id="PlOFzl" name="Voronoi.hpp" compile="0" resource="0" file="Hoa/Sources/Voronoi.hpp"/>
-      <FILE id="ECyJou" name="Wider.hpp" compile="0" resource="0" file="Hoa/Sources/Wider.hpp"/>
+      <FILE id="bQ1h1X" name="Hoa_Decoder.hpp" compile="0" resource="0" file="Hoa/Sources/Hoa_Decoder.hpp"/>
+      <FILE id="p9tWjF" name="Hoa_Defs.hpp" compile="0" resource="0" file="Hoa/Sources/Hoa_Defs.hpp"/>
+      <FILE id="RTw5TY" name="Hoa_Encoder.hpp" compile="0" resource="0" file="Hoa/Sources/Hoa_Encoder.hpp"/>
+      <FILE id="SIIERn" name="Hoa_Exchanger.hpp" compile="0" resource="0"
+            file="Hoa/Sources/Hoa_Exchanger.hpp"/>
+      <FILE id="V7ik5j" name="Hoa_Harmonics.hpp" compile="0" resource="0"
+            file="Hoa/Sources/Hoa_Harmonics.hpp"/>
+      <FILE id="ab5lCU" name="Hoa_Hrir.hpp" compile="0" resource="0" file="Hoa/Sources/Hoa_Hrir.hpp"/>
+      <FILE id="rqlnWn" name="Hoa_HrirIrc1002C2D.hpp" compile="0" resource="0"
+            file="Hoa/Sources/Hoa_HrirIrc1002C2D.hpp"/>
+      <FILE id="QcQrUX" name="Hoa_HrirIrc1002C3D.hpp" compile="0" resource="0"
+            file="Hoa/Sources/Hoa_HrirIrc1002C3D.hpp"/>
+      <FILE id="ucTTjZ" name="Hoa_Math.hpp" compile="0" resource="0" file="Hoa/Sources/Hoa_Math.hpp"/>
+      <FILE id="hGceLP" name="Hoa_Meter.hpp" compile="0" resource="0" file="Hoa/Sources/Hoa_Meter.hpp"/>
+      <FILE id="in1JWG" name="Hoa_MultiEncoder.hpp" compile="0" resource="0"
+            file="Hoa/Sources/Hoa_MultiEncoder.hpp"/>
+      <FILE id="fYgIHT" name="Hoa_Optim.hpp" compile="0" resource="0" file="Hoa/Sources/Hoa_Optim.hpp"/>
+      <FILE id="JMFzCx" name="Hoa_Planewaves.hpp" compile="0" resource="0"
+            file="Hoa/Sources/Hoa_Planewaves.hpp"/>
+      <FILE id="ZrdcSG" name="Hoa_Processor.hpp" compile="0" resource="0"
+            file="Hoa/Sources/Hoa_Processor.hpp"/>
+      <FILE id="H8hGQO" name="Hoa_Rotate.hpp" compile="0" resource="0" file="Hoa/Sources/Hoa_Rotate.hpp"/>
+      <FILE id="wyghGX" name="Hoa_Scope.hpp" compile="0" resource="0" file="Hoa/Sources/Hoa_Scope.hpp"/>
+      <FILE id="zSGh1I" name="Hoa_Signal.hpp" compile="0" resource="0" file="Hoa/Sources/Hoa_Signal.hpp"/>
+      <FILE id="JLxjmz" name="Hoa_Source.hpp" compile="0" resource="0" file="Hoa/Sources/Hoa_Source.hpp"/>
+      <FILE id="STsjiw" name="Hoa_Tools.hpp" compile="0" resource="0" file="Hoa/Sources/Hoa_Tools.hpp"/>
+      <FILE id="ys6duv" name="Hoa_Vector.hpp" compile="0" resource="0" file="Hoa/Sources/Hoa_Vector.hpp"/>
+      <FILE id="hVvd5N" name="Hoa_Voronoi.hpp" compile="0" resource="0" file="Hoa/Sources/Hoa_Voronoi.hpp"/>
+      <FILE id="jBdieQ" name="Hoa_Wider.hpp" compile="0" resource="0" file="Hoa/Sources/Hoa_Wider.hpp"/>
+      <FILE id="Zs0loj" name="Hoa.hpp" compile="0" resource="0" file="Hoa/Sources/Hoa.hpp"/>
     </GROUP>
   </MAINGROUP>
   <EXPORTFORMATS>
