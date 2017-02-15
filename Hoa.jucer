@@ -15,9 +15,6 @@
             file="Source/PluginProcessor.cpp"/>
       <FILE id="gL1vbv" name="PluginProcessor.h" compile="0" resource="0"
             file="Source/PluginProcessor.h"/>
-      <FILE id="Rt3yJa" name="PluginEditor.cpp" compile="1" resource="0"
-            file="Source/PluginEditor.cpp"/>
-      <FILE id="pnPz5D" name="PluginEditor.h" compile="0" resource="0" file="Source/PluginEditor.h"/>
     </GROUP>
     <GROUP id="{9513651F-F5B3-42C4-4CBB-7EADE28FBA46}" name="Hoa">
       <FILE id="svawQI" name="Decoder.hpp" compile="0" resource="0" file="Hoa/Sources/Decoder.hpp"/>
