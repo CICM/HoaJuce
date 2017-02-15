@@ -58,10 +58,10 @@ public:
     void setStateInformation (const void* data, int sizeInBytes) override;
 
 private:
-    size_t m_order     = 3;
-    size_t m_nsources  = 16;
-    size_t m_nhps      = 16;
-    size_t m_nharmos   = 16; // (3+1)^2
+    static const size_t m_order     = 3;
+    static const size_t m_nsources  = 16;
+    static const size_t m_nhps      = 16;
+    static const size_t m_nharmos   = 16; // (3+1)^2
     
     ScopedPointer<hoa::Encoder<hoa::Hoa3d, float>::Multi>   m_encoder;
     ScopedPointer<hoa::Optim<hoa::Hoa3d, float>::InPhase>   m_optim;
