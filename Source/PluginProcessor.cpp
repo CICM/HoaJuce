@@ -78,25 +78,34 @@ void HoaAudioProcessor::processBlock (AudioSampleBuffer& buffer, MidiBuffer& mid
     const int nouts = getTotalNumOutputChannels();
     const int nsamples = buffer.getNumSamples();
 
-    
+    // The input audio buffers are [channels][samples] but we need [samples][channels]
+    // so we "interleave" the buffer
     for(int i = 0; i < nins; ++i)
     {
         hoa::Signal<float>::copy(nsamples, buffer.getReadPointer(i), 1, m_inputs+i, JucePlugin_HoaNumSources);
     }
     for(int i = 0; i < nsamples; i++)
     {
+        // For each sample
+        // we encode the sources
         for(int j = 0; j < nins; ++j)
         {
-            // Here you can change the radius, the azimuth and the elevation for each source j
+            // Here you can change the radius,
+            // the azimuth and the elevation
+            // for each source j
             m_encoder.setRadius(j, 1.);
             m_encoder.setAzimuth(j, 0.);
             m_encoder.setElevation(j, 0.);
         }
         m_encoder.process(m_inputs+JucePlugin_HoaNumSources*i, m_harmonics+JucePlugin_HoaNumHarmonics*i);
+        // we optimize the sound field
         m_optim.process(m_harmonics+JucePlugin_HoaNumHarmonics*i, m_harmonics+JucePlugin_HoaNumHarmonics*i);
+        // we decode the sound field
+        // for a set of loudspeakers
         m_decoder.process(m_harmonics+JucePlugin_HoaNumHarmonics*i, m_outputs+JucePlugin_HoaNumHarmonics*i);
     }
-    
+    // The output audio buffers are [channels][samples] but we offer [samples][channels]
+    // so we "interleave" the buffer
     for(long i = 0; i < nouts; i++)
     {
         hoa::Signal<float>::copy(nsamples, m_outputs+i, JucePlugin_HoaNumChannels, buffer.getWritePointer(i), 1);

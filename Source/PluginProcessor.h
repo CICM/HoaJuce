@@ -51,6 +51,7 @@ private:
     hoa::MultiEncoder<hoa::Hoa3d, float>        m_encoder;
     hoa::Optim<hoa::Hoa3d, float>               m_optim;
     hoa::DecoderRegular<hoa::Hoa3d, float>      m_decoder;
+    
     float*                                      m_inputs;
     float*                                      m_harmonics;
     float*                                      m_outputs;
