@@ -50,6 +50,7 @@ m_decoder(JucePlugin_HoaOrder, JucePlugin_HoaNumChannels)
     m_decoder.setPlanewaveElevation(13, 75.);
     m_decoder.setPlanewaveElevation(14, 75.);
     m_decoder.setPlanewaveElevation(15, 75.);
+    m_decoder.prepare();
 }
 
 HoaAudioProcessor::~HoaAudioProcessor()
@@ -58,7 +59,7 @@ HoaAudioProcessor::~HoaAudioProcessor()
 
 
 //==============================================================================
-void HoaAudioProcessor::prepareToPlay (double sampleRate, int samplesPerBlock)
+void HoaAudioProcessor::prepareToPlay(double sampleRate, int samplesPerBlock)
 {
     m_inputs    = new float[samplesPerBlock * JucePlugin_HoaNumSources];
     m_harmonics = new float[samplesPerBlock * JucePlugin_HoaNumHarmonics];
