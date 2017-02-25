@@ -103,7 +103,7 @@ void HoaAudioProcessor::processBlock (AudioSampleBuffer& buffer, MidiBuffer& mid
         m_optim.process(m_harmonics+JucePlugin_HoaNumHarmonics*i, m_harmonics+JucePlugin_HoaNumHarmonics*i);
         // we decode the sound field
         // for a set of loudspeakers
-        m_decoder.process(m_harmonics+JucePlugin_HoaNumHarmonics*i, m_outputs+JucePlugin_HoaNumHarmonics*i);
+        m_decoder.process(m_harmonics+JucePlugin_HoaNumHarmonics*i, m_outputs+JucePlugin_HoaNumChannels*i);
     }
     // The output audio buffers are [channels][samples] but we offer [samples][channels]
     // so we "interleave" the buffer
